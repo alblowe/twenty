@@ -123,6 +123,6 @@ services:
     restart: always
     command: ["--maxmemory-policy", "noeviction"]
 
-volumes:
+volumes: 
   db-data:
   server-local-data:
