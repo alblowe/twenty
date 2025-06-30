@@ -32,7 +32,7 @@ services:
     volumes:
       - twenty-server-data:/app/docker-data:Z
     ports:
-      - 127.0.0.1:8080:3000
+      - "${PUBLIC_PORT:-8080}:3000"
 
   worker:
     container_name: twenty-worker
